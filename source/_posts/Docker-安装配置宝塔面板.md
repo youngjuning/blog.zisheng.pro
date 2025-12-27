@@ -16,7 +16,7 @@ tags:
 
 宝塔 Linux 面板是提升运维效率的服务器管理软件，支持一键 LAMP/LNMP/集群/监控/网站/FTP/数据库/JAVA 等 100 多项服务器管理功能。有 30 个人的专业团队研发及维护，经过 200 多个版本的迭代，功能全，少出错且足够安全，已获得全球百万用户认可安装。运维要高效，装宝塔。
 
-![俊宁](https://www.bt.cn/Public/images/linux_pc_free.png)
+![紫升](https://www.bt.cn/Public/images/linux_pc_free.png)
 
 ## 为什么使用 Docker 安装？
 
@@ -64,7 +64,7 @@ sudo sh get-docker.sh --mirror Aliyun
 ## 安装宝塔镜像
 
 ```sh
-curl -fsSL https://www.youngjuning.cn/shell/baota/install.sh | sh
+curl -fsSL https://blog.zisheng.pro/shell/baota/install.sh | sh
 ```
 
 - `/www/wwwroot` 挂载在宿主机的 `~/wwwroot` 目录
@@ -118,7 +118,7 @@ docker exec -it baota bash
 如果我们迁移的话，不需要再重复上面的安装配置步骤，直接使用我提供的脚本：
 
 ```sh
-curl -fsSL https://www.youngjuning.cn/shell/baota/backup.sh | sh
+curl -fsSL https://blog.zisheng.pro/shell/baota/backup.sh | sh
 ```
 
 压缩包 `baota.tar` 将备份到当前目录，上传到新的服务器之后载入容器：
@@ -130,10 +130,10 @@ docker load -i baota.tar
 恢复容器：
 
 ```sh
-curl -fsSL https://www.youngjuning.cn/shell/baota/restore.sh | sh
+curl -fsSL https://blog.zisheng.pro/shell/baota/restore.sh | sh
 ```
 
 ## 已知问题
 
 1. 部分机器初始化环境可能某些端口被占用，比如 80 端口被占用，使用 `netstat -lnp|grep 80` 查看进程 PID，然后使用 `kill -9 XXXX` 结束该进程 (xxxx 为进程的相关 pid)。
-2. 如果事先安装了 nginx，请先卸载，完全卸载请执行 `curl -fsSL https://www.youngjuning.cn/shell/nginx/uninstall.sh | sh`
+2. 如果事先安装了 nginx，请先卸载，完全卸载请执行 `curl -fsSL https://blog.zisheng.pro/shell/nginx/uninstall.sh | sh`

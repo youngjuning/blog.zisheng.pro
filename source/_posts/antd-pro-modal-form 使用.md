@@ -84,7 +84,7 @@ export default () => {
 }
 ```
 
-- `onFinish`: 提交数据时触发，如果返回一个 true。会关掉抽屉,如果配置了 `destroyOnClose` 还会重置表单。 
+- `onFinish`: 提交数据时触发，如果返回一个 true。会关掉抽屉,如果配置了 `destroyOnClose` 还会重置表单。
 - `ProFormText`: ProFormText 是 FormItem + Input 的产物，用于输入各类文本
 
 > 注意：onFinish 是提交表单且数据验证成功后回调事件，同 antd 4 Form 组件 API
@@ -157,10 +157,10 @@ export default () => {
           </Button>
         }
         request={async () => ({
-          name: "俊宁的项目1"
+          name: "紫升的项目1"
         }}}
         initialValues={{
-          name: "俊宁的项目2"
+          name: "紫升的项目2"
         }}
         onFinish={async (values) => {
           console.log(values.name);
@@ -174,8 +174,8 @@ export default () => {
           label="项目名称"
           tooltip="最长为 24 位"
           placeholder="请输入名称",
-          request={async () => "俊宁的项目3"}
-          initialValue={"俊宁的项目4"}
+          request={async () => "紫升的项目3"}
+          initialValue={"紫升的项目4"}
           rules={[
             {
               required: true,

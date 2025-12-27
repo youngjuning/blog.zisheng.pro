@@ -72,9 +72,9 @@ $ npm deprecate @youngjuning/playground@1.0.3 "垃圾"
     "weixin"
   ],
   "author": {
-    "name": "俊宁",
+    "name": "紫升",
     "email": "youngjuning@aliyun.com",
-    "url": "https://www.youngjuning.cn"
+    "url": "https://blog.zisheng.pro"
   },
   "license": "MIT",
   "bugs": {

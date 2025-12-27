@@ -11,16 +11,16 @@ description: 有朋自网线来，不亦说乎
 
 ```json
 {
-  "name": "俊宁的博客",
-  "link": "https://www.youngjuning.cn",
+  "name": "紫升的博客",
+  "link": "https://blog.zisheng.pro",
   "avatar": "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1742301937620.png",
   "descr": "怕什么真理无穷，进一寸有一寸的欢喜。"
 }
 ```
 
 ```yml
-- name: "俊宁的博客"
-  link: "https://www.youngjuning.cn"
+- name: "紫升的博客"
+  link: "https://blog.zisheng.pro"
   avatar: "https://cdn.jsdelivr.net/gh/youngjuning/images@main/1742301937620.png"
   descr: "怕什么真理无穷，进一寸有一寸的欢喜。"
 ```

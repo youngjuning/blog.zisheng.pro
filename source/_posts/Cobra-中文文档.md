@@ -489,7 +489,7 @@ Echo works a lot like print, except it has a child command.`,
 
 以下输出由 Cobra 自动生成。 除了命令和标志定义外，什么都不需要。
 
-![俊宁](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4ab343af6ed24362b1926bb8fd0a23b0~tplv-k3u1fbpfcp-zoom-1.image)
+![紫升](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4ab343af6ed24362b1926bb8fd0a23b0~tplv-k3u1fbpfcp-zoom-1.image)
 
 `help` 就像其他命令一样。并没有特殊的逻辑或行为。实际上，你可以根据需要提供自己的服务。
 
@@ -509,7 +509,7 @@ cmd.setHelpTemplate(s string)
 
 当用户提供无效的标志或无效的命令时，Cobra 会通过向用户显示 `usage` 进行响应。
 
-![俊宁](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f1975f1c578418ebd37e81b682e69dd~tplv-k3u1fbpfcp-zoom-1.image)
+![紫升](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f1975f1c578418ebd37e81b682e69dd~tplv-k3u1fbpfcp-zoom-1.image)
 
 #### 定义你自己的使用信息
 
@@ -657,10 +657,10 @@ Run 'kubectl help' for usage.
 
 Cobra 可以基于子命令、标志等生成文档。可用格式如下：
 
-- [Markdown](https://www.youngjuning.cn/cobra/md_docs)
-- [ReStructured Text](https://www.youngjuning.cn/cobra/rest_docs)
-- [Man Page](https://www.youngjuning.cn/cobra/man_docs)
+- [Markdown](https://blog.zisheng.pro/cobra/md_docs)
+- [ReStructured Text](https://blog.zisheng.pro/cobra/rest_docs)
+- [Man Page](https://blog.zisheng.pro/cobra/man_docs)
 
 ### 为你的命令生成 Bash Completions
 
-Cobra 可以生成 bash-completion 文件。如果你给你的命令添加了更多的信息，这些自动提示的分析会非常强大和灵活。更是信息请阅读[Bash Completions](https://www.youngjuning.cn/cobra/bash_completions)
+Cobra 可以生成 bash-completion 文件。如果你给你的命令添加了更多的信息，这些自动提示的分析会非常强大和灵活。更是信息请阅读[Bash Completions](https://blog.zisheng.pro/cobra/bash_completions)

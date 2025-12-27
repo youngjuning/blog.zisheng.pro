@@ -1,28 +1,28 @@
 ---
-title: 俊宁的相册
+title: 紫升的相册
 date: 2023-04-02 23:51:00
-description: 俊宁的相册
+description: 紫升的相册
 top_img: https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681038780175.png
 type: galleryGroup
 tags:
-  - 俊宁
+  - 紫升
   - 素材
   - 相册
-  - 俊宁的素材
+  - 紫升的素材
 ---
 
 {% gallery true %}
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681893376601.gif)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681038780175.png)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681040185713.png)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681040241093.png)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1687969324404.png)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1742301937620.png)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681040178946.png)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681038734909.png)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1680450445599.png)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1680450294102.jpeg)
-![俊宁](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681893370544.png)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681893376601.gif)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681038780175.png)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681040185713.png)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681040241093.png)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1687969324404.png)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1742301937620.png)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681040178946.png)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681038734909.png)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1680450445599.png)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1680450294102.jpeg)
+![紫升](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1681893370544.png)
 {% endgallery %}
 
 ## 天目山禅缘寺
