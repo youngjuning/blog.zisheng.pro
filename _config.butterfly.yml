@@ -579,7 +579,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics: G-M7KEMBRVPJ
+google_analytics: G-JS9QRH67EB
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
@@ -598,15 +598,15 @@ google_adsense:
   enable: true
   auto_ads: true
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-  client: ca-pub-7962287588031867
+  client: ca-pub-5641491107630454
   enable_page_level_ads: true
 
 # Insert ads manually (手動插入廣告)
 ad:
-  index_top: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="4141043061" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  index_top: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1645676004" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   # index: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="3262295413" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   # aside: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1257383027" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  post_top: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="5109434404" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  post_top: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5702084207" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   # post_bottom: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="5282734348" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 # Verification (站長驗證)
@@ -615,12 +615,12 @@ ad:
 site_verification:
   # Google Webmaster tools verification.
   # See: https://search.google.com/search-console
-  - name: google-site-verification
-    content: ohZ0A8YKJu755suq7WOIJkLGDfj3BGU4isb8RKI5Cj8
+  # - name: google-site-verification
+  #   content: ohZ0A8YKJu755suq7WOIJkLGDfj3BGU4isb8RKI5Cj8
   # Baidu Webmaster tools verification.
   # See: https://ziyuan.baidu.com/site
-  - name: baidu-site-verification
-    content: codeva-seFAiiGXVd
+  # - name: baidu-site-verification
+  #   content: codeva-seFAiiGXVd
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
