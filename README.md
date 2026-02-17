@@ -1,7 +1,6 @@
 # 紫升的博客
 
 [![紫升](https://img.shields.io/website-up-down-green-red/https/blog.zisheng.pro.svg)](https://blog.zisheng.pro)
-[![github pages](https://github.com/youngjuning/blog.zisheng.pro/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/youngjuning/blog.zisheng.pro/actions/workflows/gh-pages.yml)
 [![紫升](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](https://guides.github.com/features/mastering-markdown/)
 
 ## 前端学习路线
