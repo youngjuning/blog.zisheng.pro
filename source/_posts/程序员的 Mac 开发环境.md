@@ -150,12 +150,21 @@ ohmyzsh 主题我只用 ys。
 
 快速切换 hosts，点击 https://github.com/oldj/SwitchHosts/releases 去下载。
 
+## Docker
+
+> 参考 [Mac安装Docker（Orbstack）并使用Portainer管理](https://zhuanlan.zhihu.com/p/1899756565264827657)
+
+- [Orbstack](https://orbstack.dev/download)：Docker Desktop 替代方案，实现光速开发。
+- [Portainer](https://www.portainer.cn/)：Docker 可视化管理面板
+
 ## 提效工具
 
 - [Alfred](https://www.alfredapp.com/)：Mac 上最强大的效率工具
 - [Monica](https://monica.im/)：人工智能助手
 - [Kap](https://getkap.co/)：Mac 上轻量 GIF 录屏小工具
 - [Snipaste](https://zh.snipaste.com/)：截图+贴图
+- [openscreen](https://github.com/siddharthvaddem/openscreen)：Screen Studio 的理想替代方案。
+- [uTools](https://www.u-tools.cn/index.html)：AI 时代的轻工具平台
 
 ## v8
 
