@@ -1,0 +1,15 @@
+{
+  "file": "/Users/zisheng/github/blog.zisheng.pro/source/images/rss-resident-set-size.webp",
+  "model": "gpt-image-2-all",
+  "requested_size": "1280x720",
+  "actual_resolution": "1280x720",
+  "generation_time_ms": 36716,
+  "generation_time_seconds": 36.72,
+  "response_format": "b64_json",
+  "output_format": "webp",
+  "file_size_bytes": 38762,
+  "file_size_kb": 37.9,
+  "postprocess": "converted to 1280x720 lossy WebP q78; q70 fallback if over 300 KB; Doubao-only 7% watermark crop before resize",
+  "prompt": "Landscape editorial cover illustration for a technical article about Resident Set Size in a multi-process browser. On the right half, several elegant translucent stacks of memory pages rise from distinct abstract browser-process silhouettes; some pale shared pages visibly overlap across several stacks, making their combined height appear much larger. Beside them, a single calmer, compact, deduplicated memory mass rests close to the ground, suggesting actual physical footprint without becoming a literal chart or interface. Qingshan Lake light visual language: warm mist-white canvas, restrained lake-teal and cypress-green traces, distant gray-blue layering around the outer edges, rare soft dawn-gold accent, quiet natural precision, subtle paper and water depth. Main subject in the lower-right and center-right; the left third is generous, low-detail negative space for later title overlay. Premium technical editorial art, continuous soft geometry, restrained translucency, readable at thumbnail size, no people, no literal landscape poster, no UI cards, no axes, no numbers, no text, no letters, no watermark, no brand marks, no platform logos.",
+  "created_at": "2026-08-24T20:46:55+0800"
+}
