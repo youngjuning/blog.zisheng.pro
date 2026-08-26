@@ -1,0 +1,15 @@
+{
+  "file": "/Users/zisheng/github/blog.zisheng.pro/source/images/profile-meaning-contexts-background.webp",
+  "model": "gpt-image-2-all",
+  "requested_size": "1280x720",
+  "actual_resolution": "1600x900",
+  "generation_time_ms": 39443,
+  "generation_time_seconds": 39.44,
+  "response_format": "b64_json",
+  "output_format": "webp",
+  "file_size_bytes": 25248,
+  "file_size_kb": 24.7,
+  "postprocess": "resized to 1600x900 and converted to WebP q78 for the deterministic SVG cover layer",
+  "prompt": "Wide 16:9 editorial background for a technical article about the many meanings of the word profile. Qingshan Lake light visual language: warm mist-white canvas, translucent pale lake haze, restrained lake-teal and cypress-green traces, distant gray-blue hill layering around the outer edges, rare soft dawn-gold accent, quiet natural precision, subtle paper and water depth. Three gently differentiated atmospheric zones suggest user identity, build configuration, and product delivery without using cards, icons, diagrams, or literal objects. Center and upper-left remain clean with generous negative space for exact overlay text. No text, no letters, no watermark, no logos, no humanoid figure, no faces, no UI, no code, no architecture diagram, no neon cyberpunk, no generic blue-purple AI gradient, no literal landscape poster.",
+  "created_at": "2026-08-26T20:22:44+0800"
+}
