@@ -1,0 +1,15 @@
+{
+  "file": "/Users/zisheng/github/blog.zisheng.pro/source/images/windows-ai-browser-launch-parameters.webp",
+  "model": "gpt-image-2-all",
+  "requested_size": "1280x720",
+  "actual_resolution": "1672x941",
+  "generation_time_ms": 27357,
+  "generation_time_seconds": 27.36,
+  "response_format": "b64_json",
+  "output_format": "webp",
+  "file_size_bytes": 54022,
+  "file_size_kb": 52.8,
+  "postprocess": "direct webp q78",
+  "prompt": "Landscape technical article cover, 16:9 composition. A calm modern desktop browser window running on a generic Windows-like workstation, shown as a clean production application with no command-line flags attached. Nearby, a separate compact diagnostics workbench contains abstract removable parameter tags, a bug inspection lens, a network trace line, and an automation cable, making the boundary between normal launch and controlled diagnosis visually obvious. Qingshan Lake light visual language: warm mist-white canvas, restrained lake-teal and cypress-green traces, distant gray-blue layers around the outer edges, rare soft dawn-gold accent, quiet natural precision, generous breathing room, subtle paper and water depth. Editorial technical illustration, crisp geometric forms with gentle material depth, no people. Keep the center-left low-detail and title-safe. No architecture diagram, no dense UI, no literal scenery, no neon cyberpunk, no generic blue-purple AI glow, no text, no letters, no numbers, no watermark, no brand marks, no platform logos.",
+  "created_at": "2026-08-26T08:04:06+0800"
+}
