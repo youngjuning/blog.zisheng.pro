@@ -1,0 +1,16 @@
+{
+  "file": "/Users/zisheng/github/blog.zisheng.pro/source/images/windows-pe-section-layout.webp",
+  "model": "deterministic-svg",
+  "requested_size": "1600x900",
+  "actual_resolution": "1600x900",
+  "generation_time_ms": 0,
+  "generation_time_seconds": 0,
+  "response_format": "local-render",
+  "output_format": "webp",
+  "file_size_bytes": 86568,
+  "file_size_kb": 84.5,
+  "postprocess": "Qingshan Lake Light deterministic SVG, static geometry validation passed, rasterized with sips, WebP q90",
+  "sha256": "35bf0a31a6af87dc642e88e6d771c73a403ef35086fa632c292efb98e85321e4",
+  "prompt": "Explain the simplified Windows PE section layout and distinguish the editable .rsrc resource section from protected non-resource sections, including raw offset versus RVA.",
+  "created_at": "2026-09-01T18:52:00+0800"
+}

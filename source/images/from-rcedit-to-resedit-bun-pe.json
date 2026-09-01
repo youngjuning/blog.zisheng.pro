@@ -1,0 +1,15 @@
+{
+  "file": "/Users/zisheng/github/blog.zisheng.pro/source/images/from-rcedit-to-resedit-bun-pe.webp",
+  "model": "gpt-image-2-all",
+  "requested_size": "1280x720",
+  "actual_resolution": "1280x720",
+  "generation_time_ms": 36981,
+  "generation_time_seconds": 36.98,
+  "response_format": "b64_json",
+  "output_format": "webp",
+  "file_size_bytes": 57376,
+  "file_size_kb": 56.0,
+  "postprocess": "direct webp q78",
+  "prompt": "Landscape editorial cover for a technical engineering article. A precise cutaway view of a Windows executable as a compact layered metal-and-glass container resting above a calm mist-white work surface. The container has several horizontal internal bands; one small lake-teal resource module is being carefully replaced with a fine engineering instrument, while a larger warm-gray payload chamber at the rear remains sealed, intact, and visibly undisturbed. Qingshan Lake light visual language: warm mist-white canvas, restrained lake teal and cypress green, distant gray-blue depth at the outer edges, one rare soft dawn-gold reflection, quiet natural precision, generous breathing room. Scene-led rather than diagram-led, premium editorial illustration, subtle dimensional materials, strong focal hierarchy, wide 16:9 composition, safe margins on every side. No people, no architecture diagram, no labels, no text, no letters, no code, no watermark, no logos, no Windows logo, no brand marks, no platform logos, no neon cyberpunk, no generic blue-purple AI glow.",
+  "created_at": "2026-09-01T18:44:35+0800"
+}

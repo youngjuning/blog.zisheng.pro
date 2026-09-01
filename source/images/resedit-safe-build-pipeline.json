@@ -1,0 +1,16 @@
+{
+  "file": "/Users/zisheng/github/blog.zisheng.pro/source/images/resedit-safe-build-pipeline.webp",
+  "model": "deterministic-svg",
+  "requested_size": "1600x900",
+  "actual_resolution": "1600x900",
+  "generation_time_ms": 0,
+  "generation_time_seconds": 0,
+  "response_format": "local-render",
+  "output_format": "webp",
+  "file_size_bytes": 87670,
+  "file_size_kb": 85.6,
+  "postprocess": "Qingshan Lake Light deterministic SVG pipeline, 5 nodes and 4 edges validated, rasterized with sips, WebP q90",
+  "sha256": "45ce2168cff8f3053ec15a89143fa29d4322a43ac6c6e67849caae95ea68b018",
+  "prompt": "Show the safe Windows executable build order: Bun compile, resedit resource modification, structural verification, optional Authenticode signing, final hashing and packaging.",
+  "created_at": "2026-09-01T18:52:00+0800"
+}
