@@ -85,9 +85,9 @@ git worktree prune
 
 ```bash
 # 保持主目录只做集成和最终检查
-git worktree add -b fix/importer-patch ../fiaos-fix-importer main
-git worktree add -b release/1.1.4 ../fiaos-release-1.1.4 main
-git worktree add -b docs/release-notes ../fiaos-release-docs main
+git worktree add -b fix/importer-patch ../flyos-fix-importer main
+git worktree add -b release/1.1.4 ../flyos-release-1.1.4 main
+git worktree add -b docs/release-notes ../flyos-release-docs main
 ```
 
 然后约定四件事：

@@ -1,7 +1,8 @@
 ---
-title: RSS 到底是什么：为什么 FiaOS 性能评测不能只看一个内存数字
+title: RSS 到底是什么：为什么 FlyOS 性能评测不能只看一个内存数字
 date: 2026-08-24 20:47:17
-description: 最近做 FiaOS 性能 baseline 时，同一轮空闲采样里，进程树 RSS 均值是 949.4 MiB，Physical Footprint 均值却只有 355.5 MiB。本文从这组真实数据出发，讲清 Resident Set Size 的统计边界、Chromium 多进程下的重复计数，以及判断内存回归和泄漏时应该怎样选指标。
+permalink: /posts/5c1f79f05132/
+description: 最近做 FlyOS 性能 baseline 时，同一轮空闲采样里，进程树 RSS 均值是 949.4 MiB，Physical Footprint 均值却只有 355.5 MiB。本文从这组真实数据出发，讲清 Resident Set Size 的统计边界、Chromium 多进程下的重复计数，以及判断内存回归和泄漏时应该怎样选指标。
 categories:
   - [软件工程]
 tags:
@@ -10,12 +11,12 @@ tags:
   - Performance
   - Chromium
   - macOS
-  - FiaOS
+  - FlyOS
   - Memory
 cover: /images/rss-resident-set-size.webp
 ---
 
-最近在整理 FiaOS 的性能 baseline 时，我碰到一组很容易被误读的数据：同一轮空闲采样中，完整进程树的 RSS 均值是 `949.4 MiB`，macOS Physical Footprint 均值却只有 `355.5 MiB`。
+最近在整理 FlyOS 的性能 baseline 时，我碰到一组很容易被误读的数据：同一轮空闲采样中，完整进程树的 RSS 均值是 `949.4 MiB`，macOS Physical Footprint 均值却只有 `355.5 MiB`。
 
 两个数字相差约 2.7 倍。是采集脚本错了，还是浏览器真的吃掉了近 1 GB 物理内存？都不是。真正的问题在于：我们把两个统计口径不同的指标，当成了同一个“内存占用”。这也是我想单独写清 RSS 的原因。
 
@@ -35,7 +36,7 @@ RSS（Resident Set Size）表示一个进程当前驻留在物理内存中的页
 
 操作系统按页管理内存。进程的虚拟地址空间可能很大，但其中只有一部分页面此刻真正驻留在 RAM；RSS 统计的就是这部分 resident pages 的规模。
 
-在 macOS 上，`ps` 对 `rss` 的定义是进程的 real memory resident set，并以 `1024 bytes` 为单位输出。FiaOS 的采样器读取的是：
+在 macOS 上，`ps` 对 `rss` 的定义是进程的 real memory resident set，并以 `1024 bytes` 为单位输出。FlyOS 的采样器读取的是：
 
 ```bash
 ps -axo pid=,ppid=,rss=,%cpu=,command=
@@ -60,7 +61,7 @@ Chromium 不是单进程程序。Browser、Renderer、GPU、Network Service、St
 
 可以把它想成一套公共技术手册：五个团队的桌上都放着它。按“每个团队正在使用多少资料”统计，这套手册会出现五次；按“公司仓库实际占了多少空间”统计，它只有一套。两个数字都没有错，只是在回答不同的问题。
 
-这也是为什么 FiaOS 同时采集两条线：
+这也是为什么 FlyOS 同时采集两条线：
 
 ```bash
 # 拆解进程角色，并得到每个进程的 RSS
@@ -72,9 +73,9 @@ footprint -j result.json -f bytes --noCategories <pid...>
 
 `footprint` 在接收多个进程时，会把多重映射的对象去重，并把共享部分单独记账。因此，RSS 汇总和 Physical Footprint 出现明显差异，本身并不是异常。
 
-## 回到 FiaOS：949.4 MiB 和 355.5 MiB 各代表什么
+## 回到 FlyOS：949.4 MiB 和 355.5 MiB 各代表什么
 
-2026 年 8 月 19 日，我用 FiaOS CLI `1.2.0` 的本地 Release 构建，为 Fia `0.1.0` 建立了第一份 clean-profile 正式 baseline。测试环境是 macOS 26.5.2 arm64，临时干净 profile，只打开 `https://example.com/`，预热 5 秒后进入空闲采样。
+2026 年 8 月 19 日，我用 FlyOS CLI `1.2.0` 的本地 Release 构建，为 Fia `0.1.0` 建立了第一份 clean-profile 正式 baseline。测试环境是 macOS 26.5.2 arm64，临时干净 profile，只打开 `https://example.com/`，预热 5 秒后进入空闲采样。
 
 | 采样项 | 结果 | 采样口径 |
 | --- | ---: | --- |
@@ -143,6 +144,6 @@ RSS 值得看，但要放在正确的位置上。
 
 我的核心原则只有一句：先问指标在回答什么问题，再看数字大小。
 
-RSS 不是“假数据”，Physical Footprint 也不是 RSS 的修正版。它们是从不同层面观察内存的两把尺子。FiaOS 性能治理真正需要的，不是寻找一个万能数字，而是把进程结构、系统压力、运行时分配和用户体验连成一条证据链。
+RSS 不是“假数据”，Physical Footprint 也不是 RSS 的修正版。它们是从不同层面观察内存的两把尺子。FlyOS 性能治理真正需要的，不是寻找一个万能数字，而是把进程结构、系统压力、运行时分配和用户体验连成一条证据链。
 
 > 本文使用 [writting-skill](https://github.com/zisheng-ai/writting-skill) 辅助写作，配图使用 [better-imagegen](https://github.com/zisheng-ai/better-imagegen) 生成。项目已开源，欢迎在 GitHub 点个 Star。

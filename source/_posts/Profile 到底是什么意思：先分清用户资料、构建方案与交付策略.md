@@ -2,7 +2,7 @@
 title: Profile 到底是什么意思：先分清用户资料、构建方案与交付策略
 date: 2026-08-17 20:00:00
 permalink: /posts/21a87445e60a/
-description: "`Profile` 没有一个放之四海而皆准的中文解释。它可以指浏览器用户资料、工程构建方案，也可以指产品发行配置。本文从这个词的共同语义出发，重点解释 FiaOS 的 Distribution Profile、Build Profile、User Profile 与 Settings 分别描述什么，以及看到裸写的 Profile 时应该怎样判断。"
+description: "`Profile` 没有一个放之四海而皆准的中文解释。它可以指浏览器用户资料、工程构建方案，也可以指产品发行配置。本文从这个词的共同语义出发，重点解释 FlyOS 的 Distribution Profile、Build Profile、User Profile 与 Settings 分别描述什么，以及看到裸写的 Profile 时应该怎样判断。"
 categories:
   - [AI]
 tags:
@@ -10,7 +10,7 @@ tags:
   - Build Profile
   - User Profile
   - Product Engineering
-  - FiaOS
+  - FlyOS
 cover: /images/profile-meaning-contexts.webp
 ---
 
@@ -22,7 +22,7 @@ cover: /images/profile-meaning-contexts.webp
 
 更准确的说法是：**`Profile` 没有唯一的技术含义。它表示某个对象在一组维度上的完整描述。对象不同，中文意思也不同。**
 
-浏览器里的 User Profile 是用户资料；构建系统里的 Build Profile 是一套构建方案；FiaOS 里的 Distribution Profile 则是产品发行配置。技术文档如果只写一个裸的 `Profile`，通常不是读者不懂，而是作者省略了最重要的前缀。
+浏览器里的 User Profile 是用户资料；构建系统里的 Build Profile 是一套构建方案；FlyOS 里的 Distribution Profile 则是产品发行配置。技术文档如果只写一个裸的 `Profile`，通常不是读者不懂，而是作者省略了最重要的前缀。
 
 ## 一句话总结
 
@@ -76,7 +76,7 @@ cover: /images/profile-meaning-contexts.webp
 
 它不是浏览器里的用户 Profile，也不是开发者选择的 Debug/Release Build Profile。它描述的是：这一个 Browser Distribution 准备交付成什么产品。
 
-以当前 FiaOS 为例，Distribution Profile 是 Distribution 仓库里的 `fiaos.json`。截至 2026 年 8 月 26 日，当前 contract 使用 schema v5，主要声明：
+以当前 FlyOS 为例，Distribution Profile 是 Distribution 仓库里的 `flyos.json`。截至 2026 年 8 月 26 日，当前 contract 使用 schema v5，主要声明：
 
 1. 产品身份与 App 版本；
 2. 要交付的目标平台；
@@ -117,12 +117,12 @@ Distribution Profile
 
 ## Profile 和 lock 也不是一回事
 
-在 FiaOS 的交付链路里，还要分清 Distribution Profile 与 `fiaos-lock.yaml`。
+在 FlyOS 的交付链路里，还要分清 Distribution Profile 与 `flyos-lock.yaml`。
 
 Profile 由 Distribution 编写，表达“我想交付什么”；lock 由工具根据 Profile 和实际解析结果生成，记录“这次精确使用了什么”。前者是声明，后者是可复现证据。
 
 ```text
-fiaos.json           fiaos-lock.yaml
+flyos.json           flyos-lock.yaml
 期望状态       →      精确解析结果
 人工维护              工具生成
 产品选择              package / artifact identity
@@ -132,7 +132,7 @@ fiaos.json           fiaos-lock.yaml
 
 ## Lean Profile 又是什么
 
-`Lean Profile` 也不是第四种全新的 Profile。在当前 FiaOS contract 里，`lean` 是 Distribution Profile 中可选的一组交付约束，例如只保留指定的 Chromium locale，或者明确排除某类 Runtime payload。
+`Lean Profile` 也不是第四种全新的 Profile。在当前 FlyOS contract 里，`lean` 是 Distribution Profile 中可选的一组交付约束，例如只保留指定的 Chromium locale，或者明确排除某类 Runtime payload。
 
 这里的 Lean 描述“这个发行版怎样精简交付内容”。它不代表一个常驻进程，也不是用户可以随手切换的“省内存模式”，更不等于 `fast-debug` 之类的 Build Profile。
 
